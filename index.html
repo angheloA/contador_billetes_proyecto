@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilo/estilos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1>CONTADOR DE BILLETES</h1>
+      <div>
+        <label class="opcion a monto"> Ingrese Monto: </label>
+        <input type="number" id="monto" />
+        <input
+          class="bottom"
+          type="button"
+          onclick="calcular()"
+          value="calcular"
+          
+        />
+      </div>
+      <div class="resultados">
+        <label class="opcion a">Billetes de 200:</label>
+        <input type="number" id="b200" readonly /><br />
+
+        <label class="opcion a">Billetes de 100:</label>
+        <input type="number" id="b100" readonly /><br />
+
+        <label class="opcion">Billetes de 50:</label>
+        <input type="number" id="b50" readonly /><br />
+
+        <label class="opcion">Billetes de 20:</label>
+        <input type="number" id="b20" readonly /><br />
+
+        <label class="opcion">Billetes de 10:</label>
+        <input type="number" id="b10" readonly /><br />
+      </div>
+    </div>
+    <script type="text/javascript" src="./js/operacion.js"></script>
+  </body>
+</html>
